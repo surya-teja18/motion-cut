@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Editkaro.in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Get in touch with us via the form below.</p>
+  </header>
+
+  <section id="contact-form">
+    <form id="contactForm" action="https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Editkaro.in - All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

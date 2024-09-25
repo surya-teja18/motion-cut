@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Editkaro.in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Portfolio</h1>
+    <p>Explore our wide range of video editing projects</p>
+  </header>
+
+  <section id="portfolio">
+    <h2>Portfolio Categories</h2>
+    <ul id="portfolioCategories">
+      <li data-category="short-form">Short Form</li>
+      <li data-category="long-form">Long Form</li>
+      <li data-category="gaming">Gaming Videos</li>
+      <li data-category="football">Football Edits</li>
+      <li data-category="ads">eCommerce Ads</li>
+      <li data-category="documentary">Documentary Style</li>
+      <li data-category="color-grading">Color Grading</li>
+      <li data-category="anime">Anime Videos</li>
+    </ul>
+
+    <div id="portfolioVideos">
+      <div class="video-item" data-category="short-form">
+        <iframe src="https://www.youtube.com/embed/videoid" allowfullscreen></iframe>
+        <p>Short Form Video Example</p>
+      </div>
+      <!-- Add  video-item divs for each category -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Editkaro.in - All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
