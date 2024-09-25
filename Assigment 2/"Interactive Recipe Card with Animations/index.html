@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Resume Builder</h1>
+
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+
+            <label for="summary">Profile Summary:</label>
+            <textarea id="summary" placeholder="Enter a brief profile summary"></textarea>
+
+            <label for="education">Education:</label>
+            <div id="education-section"></div>
+            <button type="button" id="add-education-btn">Add Education</button>
+
+            <label for="skills">Skills:</label>
+            <div id="skills-section">
+                <input type="checkbox" name="skill" value="HTML"> HTML
+                <input type="checkbox" name="skill" value="CSS"> CSS
+                <input type="checkbox" name="skill" value="JavaScript"> JavaScript
+            </div>
+
+            <label for="experience">Experience:</label>
+            <div id="experience-section"></div>
+            <button type="button" id="add-experience-btn">Add Experience</button>
+
+            <button type="reset" id="clear-form-btn">Clear Form</button>
+        </form>
+
+<div id="resume-preview">
+    <h2>Your Resume Preview</h2>
+    <hr> 
+
+    <div id="preview-name"></div>
+    <hr>
+    <div id="preview-email"></div>
+    <div id="preview-phone"></div>
+    <hr>
+    <div id="preview-summary"></div>
+    <hr>
+    <h3>Education</h3>
+    <div id="preview-education"></div>
+    <hr>
+    <h3>Skills</h3>
+    <div id="preview-skills"></div>
+    <hr>
+    <h3>Experience</h3>
+    <div id="preview-experience"></div>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
