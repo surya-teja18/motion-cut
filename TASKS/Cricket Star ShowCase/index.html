@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Cricket Legends Hub</h1>
+        <nav>
+            <a href="#players">Players</a>
+            <a href="#top-matches">Top Matches</a>
+            <a href="#fan-zone">Fan Zone</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Explore the World of Cricket Legends</h2>
+        <p>Learn about the greatest cricket players from around the world, their achievements, and career highlights.</p>
+        <img src="cricket-banner.jpg" alt="Cricket Banner">
+    </section>
+
+    <section id="players">
+        <h2>Featured Players</h2>
+        <div class="player-grid">
+            <div class="player-card">
+                <img src="player1.jpg" alt="Player 1">
+                <h3>Sachin Tendulkar</h3>
+                <p>Runs: 34,357 | Centuries: 100</p>
+                <a href="player-profile.html">View Profile</a>
+            </div>
+            <div class="player-card">
+                <img src="player2.jpg" alt="Player 2">
+                <h3>Brian Lara</h3>
+                <p>Runs: 22,358 | Highest Score: 400*</p>
+                <a href="player-profile.html">View Profile</a>
+            </div>
+            <!-- More player cards -->
+        </div>
+    </section>
+
+    <section id="top-matches">
+        <h2>Top Matches</h2>
+        <div class="match">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/match-id" 
+                title="Match Highlights" frameborder="0" allowfullscreen></iframe>
+            <p>India vs Pakistan - 2011 World Cup Semifinal</p>
+        </div>
+        <!-- Add more match highlights -->
+    </section>
+
+    <section id="fan-zone">
+        <h2>Fan Zone</h2>
+        <form id="fanStoryForm">
+            <label for="story">Submit Your Favorite Player Story:</label>
+            <textarea id="story" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit Story</button>
+        </form>
+
+        <div id="vote">
+            <h3>Vote for the Greatest Player</h3>
+            <form id="voteForm">
+                <input type="radio" name="player" value="Sachin Tendulkar"> Sachin Tendulkar<br>
+                <input type="radio" name="player" value="Brian Lara"> Brian Lara<br>
+                <input type="radio" name="player" value="Virat Kohli"> Virat Kohli<br>
+                <button type="button" onclick="submitVote()">Vote</button>
+            </form>
+            <div id="voteResult"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<section id="map">
+    <h2>Where Our Legends Come From</h2>
+    <div id="mapid" style="height: 400px;"></div>
+</section>
+
+<script>
+    var map = L.map('mapid').setView([20.5937, 78.9629], 4);  // Centered on India
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add markers for player hometowns
+    L.marker([19.0760, 72.8777]).addTo(map).bindPopup("Sachin Tendulkar - Mumbai, India");
+    L.marker([13.0827, 80.2707]).addTo(map).bindPopup("M.S. Dhoni - Ranchi, India");
+</script>

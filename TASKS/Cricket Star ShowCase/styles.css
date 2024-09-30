@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.player-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+}
+
+.match iframe {
+    margin: 20px;
+}
+
+#fanStoryForm, #vote {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+button {
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
