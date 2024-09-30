@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Movie Buff Central!</h1>
+        <nav>
+            <a href="#characters">Characters</a>
+            <a href="#trailers">Movie Trailers</a>
+            <a href="#quote">Quote of the Day</a>
+            <a href="#quiz">Trivia Quiz</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Your Favorite Movie Franchise Hub</h2>
+        <p>Explore the world of [Movie Franchise] with character bios, movie trailers, fun trivia quizzes, and random quotes!</p>
+        <img src="poster.jpg" alt="Movie Poster">
+    </section>
+
+    <section id="characters">
+        <h2>Character Bios</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="character1.jpg" alt="Character 1">
+                <h3>Character Name</h3>
+                <p>Interesting fact about the character.</p>
+            </div>
+            <!-- Add more character cards as needed -->
+        </div>
+    </section>
+
+    <section id="trailers">
+        <h2>Movie Trailers</h2>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-trailer-id" 
+                title="Movie Trailer" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="quote">
+        <h2>Quote of the Day</h2>
+        <div id="quoteDisplay"></div>
+        <button onclick="getRandomQuote()">Show Another Quote</button>
+    </section>
+
+    <section id="quiz">
+        <h2>Trivia Quiz</h2>
+        <form id="quizForm">
+            <p>Who is the main protagonist in [Movie]?</p>
+            <input type="radio" name="q1" value="correct"> Correct Answer<br>
+            <input type="radio" name="q1" value="wrong"> Wrong Answer<br>
+            <button type="button" onclick="checkQuiz()">Submit</button>
+        </form>
+        <div id="quizResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
